@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer>
+	<address>
+		<street>1 Any Street</street>
+	</address>
+	<phone-number>555-1111</phone-number>
+	<phone-number>555-2222</phone-number>
+	<phone-number>555-3333</phone-number>
+</customer>

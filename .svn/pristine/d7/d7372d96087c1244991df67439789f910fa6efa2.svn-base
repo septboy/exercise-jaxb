@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-bindings xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+	package-name="kumc.jaxb.metadatasource.multiple">
+	<xml-schema namespace="http://www.example.com/customer"
+		element-form-default="QUALIFIED" />
+	<java-types>
+		<java-type name="Customer">
+			<xml-virtual-access-methods />
+			<xml-root-element />
+			<xml-type prop-order="firstName lastName address" />
+			<java-attributes>
+				<xml-element java-attribute="firstName" name="first-name" />
+				<xml-element java-attribute="lastName" name="last-name" />
+				<xml-element java-attribute="billingAddress" name="billing-address" />
+			</java-attributes>
+		</java-type>
+	</java-types>
+</xml-bindings> 
+
+

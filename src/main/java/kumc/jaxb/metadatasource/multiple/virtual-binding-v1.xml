@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-bindings xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+	package-name="kumc.jaxb.metadatasource.multiple">
+	<java-types>
+		<java-type name="Customer">
+			<java-attributes>
+				<xml-element java-attribute="middleName" name="middle-name"
+					type="java.lang.String" />
+				<xml-element java-attribute="shippingAddress" name="shipping-address"
+					type="kumc.jaxb.metadatasource.multiple.Address" />
+			</java-attributes>
+		</java-type>
+	</java-types>
+</xml-bindings>

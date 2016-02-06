@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-bindings xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+	package-name="kumc.jaxb.multitenant">
+	<java-types>
+		<java-type name="Customer">
+			<xml-type
+				prop-order="firstName middleName lastName billingAddress shippingAddress phoneNumbers" />
+			<java-attributes>
+				<xml-attribute java-attribute="id" type="java.lang.Integer" />
+				<xml-element java-attribute="middleName" type="java.lang.String" />
+				<xml-element java-attribute="shippingAddress" type="kumc.jaxb.multitenant.Address" />
+				<xml-element java-attribute="phoneNumbers" name="phoneNumber"
+					type="kumc.jaxb.multitenant.PhoneNumber" container-type="java.util.List" />
+			</java-attributes>
+		</java-type>
+		<java-type name="PhoneNumber">
+			<java-attributes>
+				<xml-attribute java-attribute="type" type="java.lang.String" />
+			</java-attributes>
+		</java-type>
+	</java-types>
+</xml-bindings>
